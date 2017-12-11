@@ -1,0 +1,14 @@
+% [s,h] = sload('sample.gdf');
+% [s,h] = sload('A06T.gdf');
+[s,h] = sload('D:\MyFiles\EEGProject\BCICompetitionIV\BCICIV_2a_gdf\A08T.gdf');
+t = [0,0,7.5];
+f_borders = [5,30];
+s(isnan(s)==1)=0;
+r1 = calcErdsMap(s(:,8), h, t, f_borders, 'class', [1]);
+r2 = calcErdsMap(s(:,8), h, t, f_borders, 'class', [2]);
+% r3 = calcErdsMap(s(:,12), h, t, f_borders, 'class', [1]);
+% r4 = calcErdsMap(s(:,12), h, t, f_borders, 'class', [2]);
+plotErdsMap(r1);
+plotErdsMap(r2);
+% plotErdsMap(r3);
+% plotErdsMap(r4);
