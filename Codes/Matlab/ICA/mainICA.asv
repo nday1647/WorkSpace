@@ -1,5 +1,4 @@
 load A01T1X144X750X22
-x = x{1}';
 % [icasig, A, W, wm, dwm] = PCA_ICA(x{1}',1,22);
 % % figure;strips(x{1});
 % figure;strips(icasig');

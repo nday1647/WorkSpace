@@ -1,0 +1,8 @@
+LIBRARY ICAFunc
+EXPORTS
+ICAFuncInitialize
+ICAFuncInitializeWithHandlers
+ICAFuncTerminate
+ICAFuncPrintStackTrace
+mlxMainICAFunc
+
