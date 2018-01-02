@@ -1,6 +1,6 @@
 clc;clear;
 %读取数据
-path = 'D:\EEGProject\BCICompetitionIV\BCICIV_2a_gdf\A01T.gdf';
+path = 'D:\Myfiles\EEGProject\BCICompetitionIV\BCICIV_2a_gdf\A01T.gdf';
 
 %DATA_CHANNEL=h.NS;%通道数
 DATA_CHANNEL=(1:22);
@@ -21,7 +21,7 @@ AfterFilter_x = BPfilter(x, Fs, filt_n, filter_low, filter_high);
 %===调用CSP算法，生成投影矩阵F===
 F = csp_train(AfterFilter_x, y, train_size);
 %使用投影矩阵F对样本数据x进行空间滤波
-xAfterCSP = AfterCSP(AfterFilter_x, F);
+xAfterCSP = CSPSpatialFilter(AfterFilter_x, F);
 yArray = cell2mat(y)';%标签y转换为矩阵类型
 xy = [xAfterCSP yArray];
 train_xAfterCSP = xAfterCSP(1:train_size,:);train_y = yArray(1:train_size);
