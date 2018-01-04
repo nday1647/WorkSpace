@@ -1,13 +1,24 @@
-from sklearn.grid_search import GridSearchCV
+# -*- coding: utf-8 -*-
 from sklearn.svm import SVC
 
-model = SVC(kernel='rbf', probability=True)
-param_grid = {'C': [1e-3, 1e-2, 1e-1, 1, 10, 100, 1000], 'gamma': [0.001, 0.0001]}
-grid_search = GridSearchCV(model, param_grid, n_jobs = 1, verbose=1)
-grid_search.fit(train_x, train_y)
-best_parameters = grid_search.best_estimator_.get_params()
-for para, val in best_parameters.items():
-    print para, val
-model = SVC(kernel='rbf', C=best_parameters['C'], gamma=best_parameters['gamma'], probability=True)
-model.fit(train_x, train_y)
-return model
+
+def SVMTrain(train_x, train_y):
+    """
+       训练SVM模型，生成分类模型
+
+       输入参数
+       ----------
+       train_x: array-like, shape (n_samples, n_features)
+                L×2m   空间滤波后的数据samples
+                L: 训练数据trial总数  m: CSP 阶数
+       train_y: array-like, shape (n_samples,)
+                L 个trial对应的标签
+
+       返回值
+       ----------
+       svmModel: object
+
+       """
+    svm_model = SVC(kernel='rbf', probability=True)
+    svm_model.fit(train_x, train_y)
+    return svm_model
