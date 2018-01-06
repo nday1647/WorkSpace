@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f83743-c11c-4b23-903a-781d72d6a4a4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Data/dataForMain.mat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ODICA/ICAFunc.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ODICA/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mainTest.py" />
-      <change beforePath="$PROJECT_DIR$/../Matlab/CSP/24940822CSP(m_function)/main1.m" afterPath="$PROJECT_DIR$/../Matlab/CSP/24940822CSP(m_function)/main1.m" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CSP/CSPSpatialFilter.py" afterPath="$PROJECT_DIR$/CSP/CSPSpatialFilter.py" />
-      <change beforePath="$PROJECT_DIR$/CSP/CSPTest.py" afterPath="$PROJECT_DIR$/CSP/CSPTest.py" />
-      <change beforePath="$PROJECT_DIR$/CSP/CSPTrain.py" afterPath="$PROJECT_DIR$/CSP/CSPTrain.py" />
-      <change beforePath="$PROJECT_DIR$/CSP/__init__.py" afterPath="$PROJECT_DIR$/CSP/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/Filter/__init__.py" afterPath="$PROJECT_DIR$/Filter/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/OD-ICA/ADJBP.py" afterPath="$PROJECT_DIR$/ODICA/ADJBP.py" />
-      <change beforePath="$PROJECT_DIR$/OD-ICA/ICAFunc.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/OD-ICA/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/OD-ICA/test_icafunc.py" afterPath="$PROJECT_DIR$/ODICA/test_icafunc.py" />
-      <change beforePath="$PROJECT_DIR$/SVM/SVMTest.py" afterPath="$PROJECT_DIR$/SVM/SVMTest.py" />
-      <change beforePath="$PROJECT_DIR$/SVM/SVMTrain.py" afterPath="$PROJECT_DIR$/SVM/SVMTrain.py" />
-      <change beforePath="$PROJECT_DIR$/SVM/__init__.py" afterPath="$PROJECT_DIR$/SVM/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/../../NoteExpress数据库.Attachments/Review by Esther Monge-Pereira/Brain-machine interface in chronic stroke rehabilitation a controlled study.pdf" afterPath="$PROJECT_DIR$/../../NoteExpress数据库.Attachments/Review by Esther Monge-Pereira/Brain-machine interface in chronic stroke rehabilitation a controlled study.pdf" />
-      <change beforePath="$PROJECT_DIR$/../../NoteExpress数据库.Attachments/Review by Esther Monge-Pereira/Changes in functional connectivity correlate with behavioral gains in stroke patients after therapy using a brain-computer interface device.pdf" afterPath="$PROJECT_DIR$/../../NoteExpress数据库.Attachments/Review by Esther Monge-Pereira/Changes in functional connectivity correlate with behavioral gains in stroke patients after therapy using a brain-computer interface device.pdf" />
-      <change beforePath="$PROJECT_DIR$/../../NoteExpress数据库.Attachments/Review by Esther Monge-Pereira/Resting state changes in functional connectivity correlate with movement recovery for BCI and robot-assisted upper-extremity training after stroke.pdf" afterPath="$PROJECT_DIR$/../../NoteExpress数据库.Attachments/Review by Esther Monge-Pereira/Resting state changes in functional connectivity correlate with movement recovery for BCI and robot-assisted upper-extremity training after stroke.pdf" />
-      <change beforePath="$PROJECT_DIR$/../../NoteExpress数据库.nel" afterPath="$PROJECT_DIR$/../../NoteExpress数据库.nel" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -503,9 +481,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#24#55#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -523,9 +499,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#24#55#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
