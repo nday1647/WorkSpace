@@ -34,7 +34,7 @@ def CSPTrain(train_x, train_y, m):
     countR = 0
     # 按数据标签分类，分别赋给R1,R2, 类1 train_y=1,类2 train_y=-1
     for i in range(train_size):
-        if train_y[:, i] == 1:
+        if train_y[i] == 1:
             R1 = R1 + R[:, :, i]  # 求和
             countL = countL + 1
         else:

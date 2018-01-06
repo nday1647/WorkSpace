@@ -4,7 +4,7 @@ from sklearn.svm import SVC
 
 def SVMTrain(train_x, train_y):
     """
-       训练SVM模型，生成分类模型
+       训练SVM，生成分类模型
 
        输入参数
        ----------

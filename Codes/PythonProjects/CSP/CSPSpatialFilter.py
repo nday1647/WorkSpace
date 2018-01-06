@@ -20,9 +20,9 @@ def CSPSpatialFilter(data_x, F):
        """
     trial_size = data_x.shape[2]
     feature_len = F.shape[0]
-    xAfterCSP = np.zeros([feature_len, trial_size])
+    xAfterCSP = np.zeros([trial_size, feature_len])
     for i in range(trial_size):
         Z = np.dot(F, np.transpose(data_x[:, :, i]))  # 1个trial脑电信号投影后得到Z(2m×T)
         feature = np.log((Z.var(1)/(Z.var(1)).sum()).transpose())  # feature: 2m
-        xAfterCSP[:, i] = feature
+        xAfterCSP[i, :] = feature
     return xAfterCSP

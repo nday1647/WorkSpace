@@ -12,6 +12,7 @@ test_y = dataForClassification['test_y'] # shape(78,1)
 predict_y = dataForClassification['predict_y'] # shape(78,1)
 svm_model = SVMTrain(train_x, train_y.ravel())#y.ravel()将2D(shapes, 1)改成1D(shapes, )的形式
 predict = SVMPredict(svm_model, test_x)
-right = sum(map(sum, predict == np.transpose(test_y)))
+t = (predict == np.transpose(test_y))
+right = sum(map(sum,t))
 Accuracy = right/test_y.size
 print '正确率:', str(Accuracy)

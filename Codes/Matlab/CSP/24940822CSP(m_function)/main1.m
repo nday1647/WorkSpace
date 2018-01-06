@@ -1,6 +1,6 @@
 clc;clear;
 %读取数据
-path = 'D:\Myfiles\EEGProject\BCICompetitionIV\BCICIV_2a_gdf\A01T.gdf';
+path = 'D:\Myfiles\EEGProject\BCICompetitionIV\BCICIV_2a_gdf\A03T.gdf';
 
 %DATA_CHANNEL=h.NS;%通道数
 DATA_CHANNEL=(1:22);
