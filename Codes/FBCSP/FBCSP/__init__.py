@@ -1,0 +1,2 @@
+from FBCSPTrain import FBCSPTrain
+from FBCSPSpatialFilter import FBCSPSpatialFilter
