@@ -17,7 +17,7 @@ def CSPTrain(train_x, train_y, m):
 
        返回值
        ----------
-             F: 2m×N
+       csp_ProjMatrix: 2m×N
                 CSP 投影矩阵
 
        """
@@ -60,5 +60,5 @@ def CSPTrain(train_x, train_y, m):
     I = np.argsort(-SigmaL)
     I = (np.hstack((I[0:m], I[channel_num-m:channel_num]))).tolist()
     # 取降序排序后特征向量UL的列向量的前m和后m个（最大m个&最小m个）
-    F = np.real(np.dot(np.transpose(UL[:, I]), P))
-    return F
+    csp_ProjMatrix = np.real(np.dot(np.transpose(UL[:, I]), P))
+    return csp_ProjMatrix
