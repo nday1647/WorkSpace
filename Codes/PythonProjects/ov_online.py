@@ -4,10 +4,11 @@ import sys
 import pickle
 import serial
 import time
+sys.path.append("D:\Myfiles\WorkSpace\Codes\PythonProjects")
 from Filter import BPFilter
 from CSP import CSPSpatialFilter
-from SVM import SVMPredict
-sys.path.append("D:\Myfiles\WorkSpace\Codes\PythonProjects")
+from Classifier import ClassifierPredict
+
 
 
 
@@ -23,14 +24,15 @@ class MyOVBox(OVBox):
         self.svm_model = None
         self.a = None
         self.t = None
+        self.predictresult = []
 
     # this time we also re-define the initialize method to directly prepare the header and the first data chunk
     def initialize(self):
         print('Initializing Python Box')
-        try:
-            self.t = serial.Serial('COM5', 115200)
-        except Exception, e:
-            print 'open serial failed.'
+        #try:
+           # self.t = serial.Serial('COM6', 115200)
+        #except Exception, e:
+            #print 'open serial failed.'
     # The process method will be called by openvibe on every clock tick
     def process(self):
         # we iterate over all the input chunks in the input signal buffer
@@ -70,16 +72,17 @@ class MyOVBox(OVBox):
 
                         AfterFilter_test_x = BPFilter(signal_onetiral, Fs, filter_low, filter_high)
                         AfterCSP_test_x = CSPSpatialFilter(AfterFilter_test_x, csp_ProjMatrix)
-                        predict = SVMPredict(svm_model, AfterCSP_test_x)
-
-                        self.t.write(str(predict[0]))
+                        predict = ClassifierPredict(svm_model, AfterCSP_test_x)
+                        self.predictresult.append(predict[0])
                         print(str(predict[0]))
-                        time.sleep(1)
+                        #self.t.write(str(predict[0]))
+
+                        #time.sleep(5)
 
                         # TODO: Call data process function. Data in var signal
                         stimSet = OVStimulationSet(self.getCurrentTime(), self.getCurrentTime() + 1. / self.getClock())
                         stimSet.append(OVStimulation(0x00008207, self.getCurrentTime(), 0))
-                        #self.output[0].append(stimSet)
+                        # self.output[0].append(stimSet)
 
         # this time we also re-define the uninitialize method to output the end chunk.
     def uninitialize(self):
@@ -87,8 +90,18 @@ class MyOVBox(OVBox):
           #self.output[0].append(OVStimulationEnd(end, end))
 
          print('Uninitializing Python Box')
+         print('tiral')
+         print(self.signal_label)
+         print('predict')
+         print( self.predictresult)
+         corretcount = 1.0
+         for i in range(len(self.predictresult)):
+             if(self.signal_label[i] == self.predictresult[i]):
+                 corretcount = corretcount + 1
+         print('corretrate' )
+         print( corretcount/len(self.predictresult))
          # print(os.getcwd())
-         self.t.close()
+         #self.t.close()
 
 
 

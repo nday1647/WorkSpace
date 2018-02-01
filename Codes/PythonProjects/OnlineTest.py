@@ -6,7 +6,7 @@ import time
 import serial
 from Filter import BPFilter
 from CSP import CSPSpatialFilter
-from SVM import SVMPredict
+from Classifier import SVMPredict
 from TrainModel import TrainModel
 dataForMain = sio.loadmat(r'D:\Myfiles\WorkSpace\Codes\PythonProjects\Data\dataForMain.mat')
 data_x = dataForMain['data_x']  # shape(750,22,137)
