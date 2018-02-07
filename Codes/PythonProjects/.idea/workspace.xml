@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f83743-c11c-4b23-903a-781d72d6a4a4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/CAR/CARFilter.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/CAR/CARTest.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/CAR/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loadov.py" />
-      <change beforePath="$PROJECT_DIR$/../FBCSP/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FBCSP/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Matlab/CSP/24940822CSP(m_function)/main1.m" afterPath="$PROJECT_DIR$/../Matlab/CSP/24940822CSP(m_function)/main1.m" />
-      <change beforePath="$PROJECT_DIR$/../PythonProjects.zip" afterPath="$PROJECT_DIR$/../PythonProjects.zip" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/GH-171225-acquisition-2-samples.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/GH-171225-acquisition-2-samples.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/NeuroDataPowerSpectrum.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/NeuroDataPowerSpectrum.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF1.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF1.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF2.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF2.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF3.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF3.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF4.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF4.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF5.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF5.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF6.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF6.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF7.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF7.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF8.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/PSF8.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/ReadData.m" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/ReadData.m" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/Untitled.m" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/Untitled.m" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/f.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/f.mat" />
+      <change beforePath="$PROJECT_DIR$/../Matlab/EEGspectrum/label.mat" afterPath="$PROJECT_DIR$/../Matlab/EEGspectrum/label.mat" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CSP/CSPTrain.py" afterPath="$PROJECT_DIR$/CSP/CSPTrain.py" />
-      <change beforePath="$PROJECT_DIR$/Filter/FilterTest.py" afterPath="$PROJECT_DIR$/Filter/FilterTest.py" />
       <change beforePath="$PROJECT_DIR$/OfflineTest.py" afterPath="$PROJECT_DIR$/OfflineTest.py" />
-      <change beforePath="$PROJECT_DIR$/OnlineTest.py" afterPath="$PROJECT_DIR$/OnlineTest.py" />
-      <change beforePath="$PROJECT_DIR$/SVM/SVMPredict.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SVM/SVMTest.py" afterPath="$PROJECT_DIR$/Classifier/ClassifierTest.py" />
-      <change beforePath="$PROJECT_DIR$/SVM/SVMTrain.py" afterPath="$PROJECT_DIR$/Classifier/ClassifierTrain.py" />
-      <change beforePath="$PROJECT_DIR$/SVM/__init__.py" afterPath="$PROJECT_DIR$/Classifier/__init__.py" />
       <change beforePath="$PROJECT_DIR$/TrainModel.py" afterPath="$PROJECT_DIR$/TrainModel.py" />
-      <change beforePath="$PROJECT_DIR$/aa.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/model.pkl" afterPath="$PROJECT_DIR$/model.pkl" />
-      <change beforePath="$PROJECT_DIR$/ov.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ov_online.py" afterPath="$PROJECT_DIR$/ov_online.py" />
-      <change beforePath="$PROJECT_DIR$/ov_signal.py" afterPath="$PROJECT_DIR$/ov_signal.py" />
-      <change beforePath="$PROJECT_DIR$/../../NoteExpress数据库.Attachments/算法/Electrode channel selection based on backtracking search optimization in motor imagery brain-computer interfaces.pdf" afterPath="$PROJECT_DIR$/../../NoteExpress数据库.Attachments/算法/Electrode channel selection based on backtracking search optimization in motor imagery brain-computer interfaces.pdf" />
-      <change beforePath="$PROJECT_DIR$/../../NoteExpress数据库.nel" afterPath="$PROJECT_DIR$/../../NoteExpress数据库.nel" />
+      <change beforePath="$PROJECT_DIR$/loadov.py" afterPath="$PROJECT_DIR$/loadov.py" />
+      <change beforePath="$PROJECT_DIR$/../../NoteExpress数据库.Attachments/算法/Deep learning with convolutional neural networks for EEG decoding and visualization.pdf" afterPath="$PROJECT_DIR$/../../NoteExpress数据库.Attachments/算法/Deep learning with convolutional neural networks for EEG decoding and visualization.pdf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,7 +39,7 @@
     <SUITE FILE_PATH="coverage/PythonProjects$FilterTest.coverage" NAME="FilterTest Coverage Results" MODIFIED="1514520822721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Filter" />
     <SUITE FILE_PATH="coverage/PythonProjects$test_icafunc.coverage" NAME="test_icafunc Coverage Results" MODIFIED="1513767460260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProjects$mainTest.coverage" NAME="mainTest Coverage Results" MODIFIED="1515056297913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProjects$OfflineTest.coverage" NAME="OfflineTest Coverage Results" MODIFIED="1517382463622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProjects$OfflineTest.coverage" NAME="OfflineTest Coverage Results" MODIFIED="1517623541168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -66,8 +61,8 @@
       <file leaf-file-name="OfflineTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OfflineTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="251">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <element signature="e#24#55#0" expanded="true" />
               </folding>
@@ -75,11 +70,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainModel.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BPFilter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Filter/BPFilter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainModel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TrainModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+            <state relative-caret-position="223">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSPTrain.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSP/CSPTrain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="63" column="23" lean-forward="false" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSPTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSP/CSPTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+              <folding>
+                <element signature="e#24#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSPSpatialFilter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSP/CSPSpatialFilter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -88,11 +127,11 @@
       <file leaf-file-name="loadov.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loadov.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
               <folding>
                 <element signature="e#24#46#0" expanded="true" />
-                <element signature="e#1989#2505#0" expanded="false" />
+                <element signature="e#1987#2503#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -169,10 +208,10 @@
         <option value="$PROJECT_DIR$/Filter/FilterTest.py" />
         <option value="$PROJECT_DIR$/CAR/CARFilter.py" />
         <option value="$PROJECT_DIR$/CAR/CARTest.py" />
-        <option value="$PROJECT_DIR$/TrainModel.py" />
-        <option value="$PROJECT_DIR$/CSP/CSPTrain.py" />
         <option value="$PROJECT_DIR$/OfflineTest.py" />
+        <option value="$PROJECT_DIR$/TrainModel.py" />
         <option value="$PROJECT_DIR$/loadov.py" />
+        <option value="$PROJECT_DIR$/CSP/CSPTrain.py" />
       </list>
     </option>
   </component>
@@ -183,10 +222,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="385" />
-    <option name="y" value="64" />
-    <option name="width" value="1432" />
-    <option name="height" value="906" />
+    <option name="x" value="227" />
+    <option name="y" value="23" />
+    <option name="width" value="1509" />
+    <option name="height" value="894" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -205,7 +244,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,12 +254,23 @@
             <path>
               <item name="PythonProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="CSP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="Filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonProjects" type="462c0819:PsiDirectoryNode" />
               <item name="ODICA" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,29 +463,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="385" y="64" width="1432" height="906" extended-state="0" />
-    <editor active="true" />
+    <frame x="227" y="23" width="1509" height="894" extended-state="0" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32647815" sideWeight="0.45515198" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3665803" sideWeight="0.5750729" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260026" sideWeight="0.45515198" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3027167" sideWeight="0.58309036" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19387755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="300" height="749" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.46997777" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28602383" sideWeight="0.38917717" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36619717" sideWeight="0.42492712" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32647815" sideWeight="0.4810971" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25728863" sideWeight="0.48891625" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2858991" sideWeight="0.38917717" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3661061" sideWeight="0.42492712" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260026" sideWeight="0.4810971" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13319531" sideWeight="0.48891625" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32725948" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="-329" y="122" width="1920" height="1040" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32725948" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996207" sideWeight="0.4974055" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3988958" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="-329" y="122" width="1920" height="1040" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17257218" sideWeight="0.5110837" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3027167" sideWeight="0.4151223" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30749014" sideWeight="0.41690964" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996207" sideWeight="0.4974055" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -505,13 +553,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/OfflineTest.py</url>
-          <line>66</line>
+          <line>84</line>
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/OfflineTest.py</url>
-          <line>56</line>
+          <line>57</line>
           <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/OfflineTest.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="156" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -524,7 +577,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="153" />
+      <option name="time" value="157" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -545,21 +598,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://D:/Applications/Python27/Lib/site-packages/numpy/add_newdocs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Applications/Python27/Lib/site-packages/pkg_resources/extern/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_comm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -760,16 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSP/CSPTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="e#24#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Applications/Python27/Lib/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -790,32 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSP/CSPTrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSP/CSPSpatialFilter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Filter/BPFilter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding>
-            <element signature="e#24#55#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,21 +856,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../EEGProject/Neuroscan/Aquire-master/stick/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../EEGProject/Neuroscan/Aquire-master/stick/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Applications/Python27/Lib/site-packages/numpy/core/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/loadov.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
           <folding>
             <element signature="e#24#46#0" expanded="true" />
-            <element signature="e#1989#2505#0" expanded="false" />
+            <element signature="e#1987#2503#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Filter/BPFilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OfflineTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="251">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <element signature="e#24#55#0" expanded="true" />
           </folding>
@@ -878,8 +911,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TrainModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        <state relative-caret-position="223">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSP/CSPSpatialFilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSP/CSPTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <element signature="e#24#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSP/CSPTrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="63" column="23" lean-forward="false" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
           <folding />
         </state>
       </provider>

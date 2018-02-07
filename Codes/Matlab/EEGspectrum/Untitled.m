@@ -1,4 +1,4 @@
-load GH-171225-acquisition-2.mat;
+load DM-180202.mat;
 label = [769,770];
 for labelindex = 1:length(label)
     index = find(stims(:,2)==label(labelindex));
@@ -17,7 +17,7 @@ for labelindex = 1:length(label)
         samples(pos(i, 1), 9) = label(labelindex);
     end
 end
-save GH-171225-acquisition-2-samples samples
+save DM-180202-samples samples
 % load competitionA03T.mat;
 % trialsize = length(x);
 % data = [];

@@ -4,7 +4,7 @@ SettingPathName = 'D:\Myfiles\WorkSpace\Codes\Matlab\EEGspectrum';%配置文件路径
 addpath(SettingPathName);   
 run configuration;
 %% 加载神经数据
-load GH-171225-acquisition-2-samples.mat;
+load DM-180202-samples.mat;
 % load competitionA03T_data.mat
 total_channel=8;
 NeuroDataSelect=samples(:,1:total_channel)';

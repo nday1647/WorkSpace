@@ -53,10 +53,10 @@ def loadov(path):
     plt.figure(1)
     plt.subplot(211)
     # plt.plot(t[0:400], train_x[0:400, 3, 2])
-    plt.plot(t, signal3d[:, 2, 17])
+    plt.plot(t, data_x[:, 2, 30])
     plt.subplot(212)
     # plt.plot(t[0:400], data_x[0:400, 3, 2])
-    plt.plot(t, data_x[:, 2, 17])
+    plt.plot(t, data_x[:, 3, 30])
     plt.show()
 
     return data_x, signal_label
