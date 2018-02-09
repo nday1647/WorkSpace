@@ -54,7 +54,7 @@ def CSPTrain(train_x, train_y, m):
     YL = np.dot(np.dot(P, R1), np.transpose(P))
     YR = np.dot(np.dot(P, R2), np.transpose(P))
     # 特征值分解(同时对角化）
-    SigmaL, UL = la.eig(YL,YR)
+    SigmaL, UL = la.eig(YL, YR)
     # argsort(x)升序  argsort(-x)降序
     # 返回SigmaL降序排序后元素在原数组中的位置I
     I = np.argsort(-SigmaL)

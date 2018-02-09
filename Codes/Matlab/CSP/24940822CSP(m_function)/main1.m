@@ -1,6 +1,6 @@
 clc;clear;
 %读取数据
-path = 'D:\Myfiles\EEGProject\BCICompetitionIV\BCICIV_2a_gdf\A03T.gdf';
+path = 'D:\Myfiles\EEGProject\BCICompetitionIV\BCICIV_2a_gdf\A09T.gdf';
 
 %DATA_CHANNEL=h.NS;%通道数
 DATA_CHANNEL=(1:22);
@@ -8,6 +8,13 @@ DATA_CHANNEL=(1:22);
 Type = [769,770];
 y_tag = [1,-1];
 [x, y, Fs] = get_GDFdata(path, DATA_CHANNEL, Type, y_tag);
+% 将数据转三维格式提供给python版
+% for i =1:length(x)
+%     data_x(:,:,i) = x{i};
+%     data_y(i) = y{i};
+% end
+% save A09T data_x data_y 
+
 DATA_LENGTH = length(x{1});%1个trial的长度
 %size(A,1)返回矩阵A所对应的行数(2->列数)
 train_size = 60;%训练样本数目
