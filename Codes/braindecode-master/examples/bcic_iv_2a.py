@@ -123,7 +123,7 @@ if __name__ == '__main__':
     logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',
                         level=logging.DEBUG, stream=sys.stdout)
     # Should contain both .gdf files and .mat-labelfiles from competition
-    data_folder = '/home/schirrmr/data/bci-competition-iv/2a-gdf/'
+    data_folder = 'D:\Myfiles\EEGProject\BCICompetitionIV\BCICIV_2a_gdf'
     subject_id = 1 # 1-9
     low_cut_hz = 4 # 0 or 4
     model = 'shallow' #'shallow' or 'deep'

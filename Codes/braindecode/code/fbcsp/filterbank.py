@@ -42,7 +42,7 @@ def generate_filterbank(min_freq, max_freq, last_low_freq,
         max_freq - ((max_freq - high_start) % high_step)))
     # + low_step/2.0 to also include the last low freq
     # analogous for high_step/2.0
-    low_centers = np.arange(min_freq, last_low_freq + low_step / 2.0, low_step)
+    low_centers = np.arange(min_freq + low_step / 2.0, last_low_freq - low_step / 2.0, low_step)
     high_centers = np.arange(high_start, max_freq + high_step / 2.0, high_step)
 
     low_band = np.array([np.array(low_centers) - low_width / 2.0,

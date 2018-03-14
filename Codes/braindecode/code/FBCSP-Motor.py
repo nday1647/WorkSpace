@@ -46,7 +46,7 @@ log.setLevel('DEBUG')
 
 from braindecode.datasets.bcic_iv_2a import BCICompetition4Set2A
 data_folder = 'D:\Myfiles\EEGProject\BCICompetitionIV\BCICIV_2a_gdf'
-subject_id = 1 # 1-9
+subject_id = 3 # 1-9
 train_filename = 'A{:02d}T.gdf'.format(subject_id)
 test_filename = 'A{:02d}E.gdf'.format(subject_id)
 train_filepath = os.path.join(data_folder, train_filename)
@@ -69,7 +69,7 @@ def car_cnt(cnt):
     return mne_apply(lambda x: x - np.mean(x,axis=0, keepdims=True), cnt)
 
 cnt = car_cnt(cnt)
-cnt = mne_apply(lambda x: bandpass_cnt(x, 0, 38.0, cnt.info['sfreq']), cnt)
+cnt = mne_apply(lambda x: bandpass_cnt(x, 4, 40.0, cnt.info['sfreq']), cnt)
 
 
 
@@ -78,7 +78,8 @@ cnt = mne_apply(lambda x: bandpass_cnt(x, 0, 38.0, cnt.info['sfreq']), cnt)
 
 from fbcsp.experiment import CSPExperiment
 from collections import OrderedDict
-name_to_start_codes = OrderedDict([('left', 1), ('right', 2), ('foot', 3), ('tongue', 4)])
+# name_to_start_codes = OrderedDict([('left', 1), ('right', 2), ('foot', 3), ('tongue', 4)])
+name_to_start_codes = OrderedDict([('left', 1), ('right', 2), ('foot', 3)])
 epoch_ival_ms = [0, 4000]
 
 
@@ -97,17 +98,17 @@ from fbcsp.clean import EOGMaxMinCleaner, VarCleaner, apply_multiple_cleaners
 
 cleaned_cnt = cnt
 exp = CSPExperiment(cleaned_cnt, name_to_start_codes, epoch_ival_ms,
-                    min_freq = 4,
+                    min_freq=4,
                     max_freq=40, last_low_freq=40,
-                    low_width=4,
+                    low_width=6,
                     high_width=4,
                     low_overlap=0,
                     high_overlap=0,
                     filt_order=3,
-                    n_folds=10,
-                    n_top_bottom_csp_filters=5,
+                    n_folds=5,
+                    n_top_bottom_csp_filters=3,
                     n_selected_filterbands=None,
-                    # n_selected_features=20,
+                    n_selected_features=20,
                     forward_steps=2,
                     backward_steps=1,)
 

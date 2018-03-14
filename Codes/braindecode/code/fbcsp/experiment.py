@@ -109,7 +109,8 @@ class CSPExperiment(object):
             restricted_n_trials=None,
             shuffle=False,
             low_bound=0.2,
-            average_trial_covariance=True):
+            average_trial_covariance=True
+    ):
         local_vars = locals()
         del local_vars['self']
         self.__dict__.update(local_vars)
