@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7066be33-d98e-4017-b987-b60ce686d3d7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/../../PythonProjects/.idea/PythonProjects.iml" afterPath="$PROJECT_DIR$/../../PythonProjects/.idea/PythonProjects.iml" />
-      <change beforePath="$PROJECT_DIR$/../../PythonProjects/.idea/misc.xml" afterPath="$PROJECT_DIR$/../../PythonProjects/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/../../PythonProjects/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../PythonProjects/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/examples.iml" afterPath="$PROJECT_DIR$/.idea/examples.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bcic_iv_2a.py" afterPath="$PROJECT_DIR$/bcic_iv_2a.py" />
-      <change beforePath="$PROJECT_DIR$/../../braindecode/code/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../braindecode/code/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../../braindecode/code/FBCSP-Motor.py" afterPath="$PROJECT_DIR$/../../braindecode/code/FBCSP-Motor.py" />
-      <change beforePath="$PROJECT_DIR$/../../braindecode/code/fbcsp/experiment.py" afterPath="$PROJECT_DIR$/../../braindecode/code/fbcsp/experiment.py" />
-      <change beforePath="$PROJECT_DIR$/../../braindecode/code/fbcsp/filterbank.py" afterPath="$PROJECT_DIR$/../../braindecode/code/fbcsp/filterbank.py" />
-      <change beforePath="$PROJECT_DIR$/../../braindecode/code/fbcsp/signalproc.py" afterPath="$PROJECT_DIR$/../../braindecode/code/fbcsp/signalproc.py" />
-      <change beforePath="$PROJECT_DIR$/../../../NoteExpress数据库.Attachments/算法/Parallel convolutional-linear neural network for motor imagery classification.pdf" afterPath="$PROJECT_DIR$/../../../NoteExpress数据库.Attachments/算法/Parallel convolutional-linear neural network for motor imagery classification.pdf" />
-      <change beforePath="$PROJECT_DIR$/../../../NoteExpress数据库.nel" afterPath="$PROJECT_DIR$/../../../NoteExpress数据库.nel" />
-    </list>
+    <list default="true" id="7066be33-d98e-4017-b987-b60ce686d3d7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +44,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="39" />
     <option name="y" value="59" />
     <option name="width" value="1543" />
@@ -156,7 +141,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="59" width="1543" height="894" extended-state="1" />
+    <frame x="39" y="59" width="1543" height="894" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -171,7 +156,7 @@
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39947438" sideWeight="0.3890762" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39947438" sideWeight="0.3890762" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
