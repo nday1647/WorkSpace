@@ -57,6 +57,9 @@ train_loader = BCICompetition4Set2A(train_filepath, labels_filename=train_label_
 test_loader = BCICompetition4Set2A(test_filepath, labels_filename=test_label_filepath)
 train_cnt = train_loader.load()
 test_cnt = test_loader.load()
+
+train_cnt = train_cnt.drop_channels(['STI 014', 'EOG-left', 'EOG-central', 'EOG-right'])
+assert len(train_cnt.ch_names) == 22
 cnt = train_cnt
 # In[19]:
 
@@ -105,10 +108,10 @@ exp = CSPExperiment(cleaned_cnt, name_to_start_codes, epoch_ival_ms,
                     low_overlap=0,
                     high_overlap=0,
                     filt_order=3,
-                    n_folds=5,
+                    n_folds=3,
                     n_top_bottom_csp_filters=3,
                     n_selected_filterbands=None,
-                    n_selected_features=20,
+                    n_selected_features=10,
                     forward_steps=2,
                     backward_steps=1,)
 

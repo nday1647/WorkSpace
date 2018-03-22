@@ -105,7 +105,7 @@ class BinaryCSP(object):
         # to save memory space on disk
         self.store_results(bp_nr, fold_nr, pair_nr,
             filters[:, columns], 
-            patterns[:,columns], 
+            patterns[:, columns],
             variances[columns],
             train_feature, test_feature,
             train_feature_full_fold, test_feature_full_fold, clf,

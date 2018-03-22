@@ -72,18 +72,16 @@ def calculate_csp(epo, classes=None, average_trial_covariance=False):
     Now with pattern computation as in matlab bbci toolbox
     https://github.com/bbci/bbci_public/blob/c7201e4e42f873cced2e068c6cbb3780a8f8e9ec/processing/proc_csp.m#L112
 
-    This method calculates the CSP and the corresponding filters. Use
-    the columns of the patterns and filters.
+    This method calculates the CSP and the corresponding filters.
+    Use the columns of the patterns and filters.
     Examples
     --------
     Calculate the CSP for the first two classes::
     >>> w, a, d = calculate_csp(epo)
-    >>> # Apply the first two and the last two columns of the sorted
-    >>> # filter to the data
+    >>> # Apply the first two and the last two columns of the sorted filter to the data
     >>> filtered = apply_spatial_filter(epo, w[:, [0, 1, -2, -1]])
-    >>> # You'll probably want to get the log-variance along the time
-    >>> # axis, this should result in four numbers (one for each
-    >>> # channel)
+    >>> # You'll probably want to get the log-variance along the time axis,
+    >>> # this should result in four numbers (one for each channel)
     >>> filtered = np.log(np.var(filtered, 0))
     Select two classes manually::
     >>> w, a, d = calculate_csp(epo, [2, 5])
@@ -191,7 +189,8 @@ def calculate_csp(epo, classes=None, average_trial_covariance=False):
     source_cov = [[1,2,0.5],
                   [2,0.6,4],
                   [0.5,4,2]]
-    v_with_cov / source_cov"""
+    v_with_cov / source_cov
+    """
 
     a = sp.linalg.solve(source_cov.T, v_with_cov.T).T
     return v, a, d

@@ -255,7 +255,7 @@ class FilterbankCSP(object):
         first_features = deepcopy(features[0])
         first_n_filters = filters_for_filterband[0]
         if first_n_filters == 0:
-            first_features.X = first_features.X[:,0:0]
+            first_features.X = first_features.X[:, 0:0]
         else:
             first_features.X = first_features.X[:, list(range(first_n_filters)) +
                list(range(-first_n_filters, 0))]
