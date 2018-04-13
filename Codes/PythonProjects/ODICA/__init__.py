@@ -1,1 +1,1 @@
-from ICAFunc import ICAFunc
+from ODICA.ICAFunc import ICAFunc

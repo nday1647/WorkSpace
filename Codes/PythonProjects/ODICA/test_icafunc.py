@@ -1,6 +1,6 @@
 import numpy as np
 from scipy import signal
-from ICAFunc import ICAFunc
+from .ICAFunc import ICAFunc
 
 np.random.seed(0)
 n_samples = 2000

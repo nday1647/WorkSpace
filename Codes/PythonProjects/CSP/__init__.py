@@ -1,2 +1,2 @@
-from CSPTrain import CSPTrain
-from CSPSpatialFilter import CSPSpatialFilter
+from CSP.CSPTrain import CSPTrain
+from CSP.CSPSpatialFilter import CSPSpatialFilter

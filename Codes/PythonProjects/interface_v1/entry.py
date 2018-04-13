@@ -1,9 +1,9 @@
 import wx
 import wx.adv as wxadv
 
-from Graz import *
-from nsDataServer import *
-from main import *
+from .Graz import *
+from .nsDataServer import *
+from .main import *
 
 app = wx.App()
 win = MainWindow()

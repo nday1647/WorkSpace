@@ -1,2 +1,2 @@
-from ClassifierTrain import ClassifierTrain
-from ClassifierPredict import ClassifierPredict
+from Classifier.ClassifierTrain import ClassifierTrain
+from Classifier.ClassifierPredict import ClassifierPredict

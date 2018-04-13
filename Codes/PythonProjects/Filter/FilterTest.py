@@ -2,7 +2,7 @@
 import scipy.io as sio
 import numpy as np
 import matplotlib.pyplot as plt
-from BPFilter import BPFilter
+from .BPFilter import BPFilter
 data_xForFilter = sio.loadmat(r'D:\Myfiles\WorkSpace\Codes\PythonProjects\Data\data_xForFilter.mat')
 data_x = data_xForFilter['data_x']  # shape(750,22,138)
 Fs = 250

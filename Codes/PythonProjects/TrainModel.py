@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 # from ODICA import ICAFunc
 
 
-def TrainModel(train_x, train_y, Fs, filter_low, filter_high, classifier_type):
+def TrainModel(train_x, train_y, classifier_type, m):
     """
        离线训练
 
@@ -22,34 +22,18 @@ def TrainModel(train_x, train_y, Fs, filter_low, filter_high, classifier_type):
        返回值
        ----------
        csp_ProjMatrix: 2m×N     CSP 投影矩阵
-       svm_model: svm 分类模型
+       classifier_model:  分类模型
+       classifier_type: str 'svm' or 'lda'
+       m: CSP 参数
 
     """
     # 带通滤波
     # AfterFilter_train_x = BPFilter(train_x, Fs, filter_low, filter_high)
-
-    # t = np.linspace(1, train_x.shape[0], train_x.shape[0])
-    # plt.figure(1)
-    # plt.subplot(411)
-    # # plt.plot(t[0:400], train_x[0:400, 3, 2])
-    # plt.plot(t, train_x[:, 3, 19])
-    # plt.subplot(412)
-    # # plt.plot(t[0:400], data_x[0:400, 3, 2])
-    # plt.plot(t, AfterFilter_train_x[:, 3, 19])
-    # plt.subplot(413)
-    # # plt.plot(t[0:400], data_x[0:400, 3, 2])
-    # plt.plot(t, train_x[:, 4, 19])
-    # plt.subplot(414)
-    # # plt.plot(t[0:400], data_x[0:400, 3, 2])
-    # plt.plot(t, AfterFilter_train_x[:, 4 , 19])
-    # plt.show()
-
     # CAR 滤波
     # AfterCAR_train_x = CARFilter(AfterFilter_train_x)
     # 去眼电R
     # AfterICA_train_x = ICAFunc(AfterFilter_train_x)
     # CSP 空间投影
-    m = 2
     csp_ProjMatrix = CSPTrain(train_x, train_y, m)
     AfterCSP_train_x = CSPSpatialFilter(train_x, csp_ProjMatrix)
     # Classifier 分类模型
