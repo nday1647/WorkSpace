@@ -5,7 +5,6 @@ from CSP import CSPSpatialFilter
 from Classifier import ClassifierPredict
 from TrainModel import TrainModel
 from loadData.loadnpz import loadnpz
-
 # 竞赛数据
 # dataForMain = sio.loadmat(r'D:\Myfiles\EEGProject\BCICompetitionIV\2amat\A01T.mat')
 # data_x = dataForMain['data_x']  # shape(750,22,137)
@@ -65,5 +64,5 @@ for i in range(fold):
     right_sum = np.sum(predict == test_y)
     Acc = right_sum / len(test_y)
     Accuracy_sum = Accuracy_sum + Acc
-Accuracy = Accuracy_sum/fold
+Accuracy = Accuracy_sum / fold
 print(Accuracy)

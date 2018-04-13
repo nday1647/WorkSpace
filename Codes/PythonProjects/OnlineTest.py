@@ -28,7 +28,7 @@ csp_ProjMatrix, svm_model = TrainModel(train_x, train_y, classifier_type, m)
 # filter_high = 30
 
 try:
-    t = serial.Serial('COM1', 9600)
+    t = serial.Serial('COM3', 9600)
 except Exception as e:
     print('open serial failed.')
 
