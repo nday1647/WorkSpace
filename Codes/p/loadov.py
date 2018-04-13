@@ -37,9 +37,9 @@ def loadov(path):
                 break
 
 
-    width = 1000
-    overlap = 0.75
-    length = 1500
+    width = 2500
+    overlap = 0
+    length = 2500
     window_num = int((length - width) / ((1 - overlap) * width) + 1)
     j = 0
     signal_label = []
@@ -48,7 +48,7 @@ def loadov(path):
     for k in range(len(label)):
         for i in range(window_num):
             signal_label.append(label[k])
-            start = int(pos[k] + i * ((1 - overlap) * width)) + 500
+            start = int(pos[k] + i * ((1 - overlap) * width))
             signal3d[:, :, j] = data_x[start:start + width, :]
             j = j + 1
 

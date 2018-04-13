@@ -28,7 +28,7 @@ def CSPTrain(train_x, train_y, m):
         # R=X'*X/tr(X'*X) 协方差矩阵(对称矩阵)
         R[:, :, i] = np.dot(np.transpose(train_x[:, :, i]), train_x[:, :, i])/np.trace(np.dot(np.transpose(train_x[:, :, i]), train_x[:, :, i]))
     # 初始化R1，R2
-    R1 = np.zeros([channel_num,channel_num])  # R1/R2: N×N
+    R1 = np.zeros([channel_num, channel_num])  # R1/R2: N×N
     R2 = R1
     countL = 0
     countR = 0

@@ -20,7 +20,7 @@ global train_size;%训练样本数目
 global filt_n;%带通滤波器阶数
 
 %读取数据
-EEG = pop_loadBCI2000('XKDS001R01.dat',  {'StimulusCode', 'StimulusBegin'});
+EEG = pop_loadBCI2000('data.dat',  {'StimulusCode', 'StimulusBegin'});
 
 %属性设置
 Fs=EEG.srate;%采样率

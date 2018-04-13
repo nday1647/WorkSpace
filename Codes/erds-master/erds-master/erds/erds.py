@@ -1,0 +1,226 @@
+import numpy as np
+import scipy.stats
+
+
+def bootstrap(x, n_resamples=300, statistic="mean", alpha=0.01, axis=0):
+    """Compute bootstrap confidence interval estimate of statistic.
+
+    Parameters
+    ----------
+    x : array
+        Input data.
+    n_resamples : int
+        Number of bootstrap resamples to draw.
+    statistic : str or function
+        Statistic for which bootstrap confidence intervals are computed.
+    alpha : float
+        Significance level.
+    axis : int
+        Axis over which to draw resamples.
+
+    Returns
+    -------
+    cl, cu : tuple
+        Lower and upper confidence interval boundaries.
+    """
+    if statistic == "mean":
+        statistic = np.mean
+    elif statistic == "median":
+        statistic = np.median
+    shape = [n_resamples] + [m for i, m in enumerate(x.shape) if i != axis]
+    resamples = np.empty(shape)
+    alpha *= 100
+    for sample in range(n_resamples):
+        idx = np.random.randint(0, x.shape[axis], size=x.shape[axis])
+        resamples[sample] = statistic(np.take(x, idx, axis), axis)
+    stat = np.percentile(resamples, (alpha/2, 100 - alpha/2), axis=0)
+    return stat[0], stat[1]
+
+
+class Erds(object):
+    """ERDS maps.
+
+    Parameters
+    ----------
+    TODO
+
+    Attributes
+    ----------
+    erds_ : array, shape (n_freqs, n_channels, n_times)
+
+    Examples
+    --------
+    TODO
+    """
+    def __init__(self, n_times=128, n_freqs=513, baseline=None, fs=1):
+        self.n_times = n_times  # number of time points in ERDS map
+        self.n_freqs = n_freqs  # number of frequency bins in ERDS map
+        self.baseline = baseline  # baseline interval start and end
+        self.fs = fs  # sampling frequency
+        self.erds_ = None
+
+    def __repr__(self):
+        s = "<Erds object>\n"
+        s += "  n_times: {}\n".format(self.n_times)
+        s += "  n_freqs: {}\n".format(self.n_freqs)
+        if self.baseline is None:
+            s += "  baseline: whole epoch\n".format(self.baseline)
+        else:
+            s += "  baseline: {} s\n".format(self.baseline)
+        s += "  fs: {} Hz\n".format(self.fs)
+        if self.erds_ is None:
+            s += "  ERDS maps have not been computed (use fit method).\n"
+        else:
+            s += "  Input data:\n"
+            s += "    epochs: {}\n".format(self.n_epochs_)
+            s += "    channels: {}\n".format(self.n_channels_)
+            s += "    length: {} samples\n".format(self.n_samples_)
+            s += "  ERDS data:\n"
+            s += "    frequency bins: {}\n".format(self.n_freqs)
+            s += "    channels: {}\n".format(self.n_channels_)
+            s += "    length: {} samples\n".format(self.n_times)
+
+        return s
+
+    def fit(self, epochs, fs=None, sig="log", alpha=0.01):
+        """Compute ERDS maps.
+
+        Parameters
+        ----------
+        epochs : array, shape (n_epochs, n_channels, n_samples)
+            Data used to compute ERDS maps.
+        fs : float
+            Sampling frequency.
+        sig : str
+            If "boot", confidence intervals are computed with a bootstrap. If
+            "log", ERDS values are log-transformed and confidence intervals are
+            then computed from an assumed normal distribution. If set to any
+            other value, no confidence intervals are estimated.
+        alpha : float
+            Significance (alpha) level of confidence intervals. Only used if
+            sig is set to a value that estimates these intervals.
+
+        Returns
+        -------
+        self: instance of Erds
+            Returns the modified instance.
+        """
+        if fs is not None:
+            self.fs = fs
+        e, c, t = epochs.shape
+        self.n_epochs_ = e
+        self.n_channels_ = c
+        self.n_samples_ = t
+        step = t // (self.n_times - 1)
+        self.times_ = np.arange(0, step * (self.n_times - 1) + 1,
+                                step) / self.fs
+        self.n_fft_ = (self.n_freqs - 1) * 2
+        self.freqs_ = np.fft.rfftfreq(self.n_fft_) * self.fs
+
+        if self.baseline is None:  # use whole epoch
+            self.baseline_ = np.arange(0, self.n_times)
+        else:
+            # find corresponding closest times
+            tmp = [np.abs(self.times_ - v).argmin() for v in self.baseline]
+            self.baseline_ = np.arange(*tmp)
+
+        stft = []
+        for epoch in range(e):
+            stft.append(self._stft(epochs[epoch, :, :]))
+        stft = np.stack(stft, axis=0)
+
+        ref = stft[:, self.baseline_, :, :].mean(axis=(0, 1))
+        erds = stft / ref - 1
+
+        alpha /= np.prod(erds.shape[1:])  # Bonferroni correction
+        if sig == "boot":
+            cl, cu = bootstrap(erds, alpha=alpha, axis=0)
+            self.cl_ = cl.transpose(2, 1, 0)
+            self.cu_ = cu.transpose(2, 1, 0)
+        elif sig == "log":
+            logerds = np.log(erds + 1)
+            mean = logerds.mean(axis=0)
+            std = logerds.std(axis=0)
+            ci = scipy.stats.t.ppf(1 - alpha/2, e - 1) * std / np.sqrt(e)
+            cl, cu = np.exp(mean - ci) - 1, np.exp(mean + ci) - 1
+            self.cl_ = cl.transpose(2, 1, 0)
+            self.cu_ = cu.transpose(2, 1, 0)
+        self.erds_ = erds.mean(axis=0).transpose(2, 1, 0)
+        return self
+
+    def _stft(self, x):
+        """Compute Short-Time Fourier Transform (STFT).
+
+        Parameters
+        ----------
+        x : array, shape (n_channels, n_samples)
+            Data used to compute STFT.
+
+        Returns
+        -------
+        stft : array, shape (n_times, n_channels, n_freqs)
+            STFT of x.
+        """
+        c, t = x.shape
+        pad = np.zeros((c, self.n_fft_ // 2))
+        x = np.concatenate((pad, x, pad), axis=-1)  # zero-pad
+        step = t // (self.n_times - 1)
+        stft = np.empty((self.n_times, c, self.n_freqs))
+        window = np.hanning(self.n_fft_)
+
+        for time in range(self.n_times):
+            start = time * step
+            end = start + self.n_fft_
+            windowed = x[:, start:end] * window
+            spectrum = np.fft.rfft(windowed) / self.n_fft_
+            stft[time, :, :] = np.abs(spectrum * np.conj(spectrum))
+        return stft
+
+    def plot(self, channels=None, f_min=0, f_max=30, nrows=None, ncols=None,
+             labels=None, title=None, sig=True):
+        """Plot ERDS maps.
+
+        Parameters
+        ----------
+        channels : array or None, optional
+            Channels to display. If None, ERDS maps for all channels are
+            displayed.
+        title : int or None, optional
+            Channel title start index. If None, no titles are shown.
+        """
+        import matplotlib.pyplot as plt
+
+        if channels is None:
+            channels = range(self.n_channels_)
+        f_max = min(f_max, self.fs / 2)
+        c = self.n_freqs / (self.fs / 2)
+
+        nrows = np.round(np.sqrt(self.n_channels_)) if nrows is None else nrows
+        ncols = np.ceil(np.sqrt(self.n_channels_)) if ncols is None else ncols
+
+        mask = np.ones(self.erds_.shape)
+        if sig and self.cl_ is not None and self.cu_ is not None:
+            notsig = np.logical_and(self.cl_ < 0, self.cu_ > 0)
+            mask[notsig] = np.nan
+        erds = self.erds_ * mask
+
+        fig = plt.figure()
+        fig.subplots_adjust(hspace=0.5)
+        for idx, ch in enumerate(channels):
+            plt.subplot(nrows, ncols, idx + 1)
+            plt.imshow(erds[int(f_min * c):int(f_max * c), ch],
+                       origin="lower", aspect="auto", interpolation="none",
+                       cmap=plt.get_cmap("jet_r"), vmin=-1, vmax=1.5,
+                       extent=[0, self.n_samples_ / self.fs, f_min, f_max])
+            if labels is not None:
+                plt.title(labels[idx], fontsize=10)
+            else:
+                plt.title(str(ch), fontsize=10)
+            if idx >= self.n_channels_ - ncols:  # xlabel only in bottom row
+                plt.xlabel("t (s)", fontsize=10)
+            if idx % ncols == 0:  # ylabel only in left column
+                plt.ylabel("f (Hz)", fontsize=10)
+            plt.tick_params(labelsize=10)
+        if title is not None:
+            fig.suptitle(title)
+        return fig

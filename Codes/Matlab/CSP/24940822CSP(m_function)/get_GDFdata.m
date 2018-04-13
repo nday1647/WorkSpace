@@ -16,13 +16,15 @@ data = NaN2Mean(data);
 % [num_eyes_movement,eyes_movement,y_eyes_movement] = get_GDFdata(data_source,h,1072,4);
 
 [~, x, y] = get_data(data, h, Type(1), y_tag(1));
-for index = 2:length(Type)
-    %提取所有i类的样本
-    [~,onset,y_label] = get_data(data, h, Type(index), y_tag(index));
-    x = [x onset];
-%     x{i}=onset;
-    y = [y y_label];
-%     y{i}=y_label;
+if length(Type) >= 2
+    for index = 2:length(Type)
+        %提取所有i类的样本
+        [~,onset,y_label] = get_data(data, h, Type(index), y_tag(index));
+        x = [x onset];
+    %     x{i}=onset;
+        y = [y y_label];
+    %     y{i}=y_label;
+    end
 end
 
 %乱序
@@ -40,10 +42,10 @@ num = sum(([TYP;0] == Type).*([0;TYP] == 768));
 onset_POS = POS(logical(([TYP;0] == Type).*([0;TYP] == 768)));%去rejected值
 % onset_DUR = DUR(TYP == Type);
 onset = cell(1,num);%该类样本的个数
-y = cell(1,num);
+y = zeros(1,num);
 for i=1 : num
     onset{i} = data_source(onset_POS(i)+250:onset_POS(i)+1000-1, :);
-    y{i} = y_tag;
+    y(i) = y_tag;
 end
 end
 

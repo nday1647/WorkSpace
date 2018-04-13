@@ -5,7 +5,7 @@ import numpy as np
 
 def CARFilter(data_x):
     """
-       common average referencing filter 共参考均值滤波
+       common average referencing filter 共均值参考滤波
 
        输入参数
        ----------

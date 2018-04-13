@@ -17,7 +17,7 @@ for i=1:nBins
         end
     end
     for k=1:nNeuron 
-        if (v_mem(k,i)>0 && v_mem(k,i)>=vthr && (v_mem(k,i)-v_mem(k,i-1)>0))
+        if (v_mem(k,i)>0 && v_mem(k,i)>=vthr && (v_mem(k,i)>v_mem(k,i-1)))
             v_mem(k,i)=2;
             v_mem(k,i+1:end)=0;
             %v_mem(k,:)=v_mem(k,:)-nu*exp(-(tVec-tVec(i))/tav).*heaviside(tVec-tVec(i));

@@ -1,11 +1,11 @@
-function F = csp_train(AfterFilter_x, y, train_size)
+function F = csp_train(AfterFilter_x, y)
 % 输入参数为样本数据AfterFilter_x 标签y 训练数目train_size
 % AfterFilter_x为cell类型 每个cell代表一个trial 对应一个标签y
 % 每个cell结构为T×N, T采样点数, N通道数
 % 返回投影矩阵F 新特征f1 f2(DataNum*FeatureNum)
-
+train_size = length(AfterFilter_x);
 channel_num=size(AfterFilter_x{1},2);
-N=3;% 提取特征对数
+N=2;% 提取特征对数
 for i = 1:train_size
     % R=X'*X/tr(X'*X) 协方差矩阵(对称矩阵)
     R{i}=AfterFilter_x{i}'*AfterFilter_x{i}/trace(AfterFilter_x{i}'*AfterFilter_x{i});
@@ -17,7 +17,7 @@ R2=zeros(channel_num);
 countL=0;countR=0;
 % 按数据标签分类，分别赋给R1,R2, 类1 y=1,类2 y=-1
 for i=1:train_size
-    if y{i} == 1
+    if y(i) == 1
         R1 = R1+R{i};% 求和
         countL = countL+1;
     else

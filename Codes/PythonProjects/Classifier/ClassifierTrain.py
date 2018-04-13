@@ -4,7 +4,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 
 def ClassifierTrain(train_x, train_y, classifier_type):
     """
-       训练SVM，生成分类模型
+       训练LDA/SVM，生成分类模型
 
        输入参数
        ----------

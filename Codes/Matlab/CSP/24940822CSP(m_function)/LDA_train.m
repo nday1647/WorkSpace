@@ -1,9 +1,9 @@
 function [W, centers, y0] = LDA_train(train_xAfterCSP,train_y)
-
+train_size = length(train_y);
 f1=[];f2=[];
 for i=1:train_size
-    feature = train_xAfterCSP{i};
-    if train_y{i}==1
+    feature = train_xAfterCSP(i,:);
+    if train_y(i)==1
         f1 = [f1;feature];
     else
         f2 = [f2;feature];

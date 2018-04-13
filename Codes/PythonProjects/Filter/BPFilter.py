@@ -14,7 +14,7 @@ def BPFilter(data_x, Fs, filter_low, filter_high):
 
        返回值
        ----------
-       AfterFilter_x: T×N×L
+       AfterFilter_x: T×N×L(或单个trial T×N)
 
        """
     channel_num = data_x.shape[1]

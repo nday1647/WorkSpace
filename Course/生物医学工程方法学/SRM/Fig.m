@@ -51,15 +51,15 @@ for i=1:n
     w_stdp{i}(:,:)=w_stdp1;
 end
 
-%% Processing Original data: Neurons outputs, Correct recognition (Crct), input rate (rate_in) and output rate (rate_out) of neurons
+%% Processing Original data: Neurons outputs, Correct recognition (Crct)正确识别率, input rate (rate_in) and output rate (rate_out) of neurons
 wstep=10;
 Crct=zeros(1,wstep);
 step=size(tVec_Coding,2)/10;
-for s=1:wstep%select weights
+for s=1:wstep %select weights
     for i=1:n
         w_stdp_wta(i,:)=w_stdp{i}((s-1)*step+1,:);
     end
-    for i=1:n%sample
+    for i=1:n %sample
         Retriving_Cnt = [s i];
         [v_mem_wta, spikeMat_wta, tVec_wta] = WTA(spikeMat_Coding{i}(:,1:tR),tVec_Coding(:,1:tR),w_stdp_wta);
         spikeMat_wta_plot{i}=spikeMat_wta;
